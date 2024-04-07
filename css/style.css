@@ -78,7 +78,7 @@ nav ul li:hover {
     box-shadow: 0px 1px 4px black; 
 }
 .card h2{
-    margin-left: 10px;
+    margin-left:px;
 }
 .card h3 {
     margin-left: 10px;
@@ -124,5 +124,78 @@ nav ul li:hover {
   }
 
 @media (min-width: 900px) {
-    <!-- comment --->
+    /* change nav bar to be on top and make icons larger*/
+    
+    
+    main {
+        padding-bottom: 0;
+        padding-top: 70px;
+    }
+    nav {
+        top: 0;
+        bottom: auto;
+        background-color: #F79489;
+        opacity: .9;
+        box-shadow: 0px 1px 4px black; 
+        z-index: 1;
+        border-top: none;
+    }
+
+    nav ul li {
+        float: left;
+        font-size: x-large;
+        padding-right: 75px;
+        padding-left: 75px;
+        border-radius: 0;
+        border-right: 1px solid black;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: none; 
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: larger;
+    }
+
+    nav ul {
+        display: inline;
+        overflow: hidden;
+        list-style-type: none;
+        padding: 2px;
+    }
+
+    /* card adjustment making the cards smaller maybe make gallery scrollable*/
+    .card {
+        display: flex;
+        padding: 2em;
+        max-width: 55%;
+        justify-content: center;
+    }
+
+    .card img {
+        margin: 1em;
+        max-width: 25%;
+        max-height: 50%;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card p {
+        font-size: xx-large;
+    }
+
+    header h1{
+        font-size: 60px;
+    }
 }

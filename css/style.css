@@ -67,6 +67,33 @@ nav ul li:hover {
     background-color: #FADCD9;
     transition: background-color .5s;
 }
+
+.card-home {
+    color: black;
+    background-color: #F79489;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    box-shadow: 0px 1px 4px black; 
+}
+
+.card-home p {
+    display: flex;
+    font-size: large;
+    padding: 10px;
+}
+
+.card-home img {
+    margin: auto;
+    display: flex;
+    max-width: 95%;
+    max-height: 95%;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
 .card{
     color: black;
     background-color: #F79489;
@@ -123,10 +150,12 @@ nav ul li:hover {
     }
   }
 
+@media (min-width: 600px) {
+    
+}
+
 @media (min-width: 900px) {
     /* change nav bar to be on top and make icons larger*/
-    
-    
     main {
         padding-bottom: 0;
         padding-top: 70px;
@@ -168,21 +197,28 @@ nav ul li:hover {
     }
 
     /* card adjustment making the cards smaller maybe make gallery scrollable*/
-    .card {
+    .card-home{
+        color: black;
+        background-color: #F79489;
+        border-radius: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        box-shadow: 0px 1px 4px black; 
         display: flex;
         padding: 2em;
-        max-width: 55%;
+        max-width: 75%;
         justify-content: center;
     }
 
-    .card img {
+    .card-home img {
         margin: 1em;
         max-width: 25%;
         max-height: 50%;
         border-radius: 20px;
         padding-top: 10px;
         padding-bottom: 10px;
-
     }
 
     .container {
@@ -191,11 +227,46 @@ nav ul li:hover {
         align-items: center;
     }
 
-    .card p {
-        font-size: xx-large;
+    .card-home p {
+        font-size: 25px;
     }
 
     header h1{
         font-size: 60px;
     }
+    .skip {
+        position: absolute;
+        left: -1000px;
+    }
+    .skip:focus {
+        left: 10px;
+        top: 100px;
+    }
+
+    .card {
+        padding: 1em;
+        max-width: 75%;
+        justify-content: center;   
+        font-size: 25px;
+     }
+
+     .card img{
+        max-width: 75%;
+        max-height: 75%;
+     }
+     
+     .grid-cont {
+        display: flex;
+        overflow: auto;
+        white-space: nowrap;
+        padding: 10px;
+     }
+
+     .grid-cont img {
+        padding-right: 10px;
+     }
+    
+     .gallery-box {
+        
+     }
 }

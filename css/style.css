@@ -262,13 +262,17 @@ nav ul li:hover {
         padding: 10px;
      }
 
-     .grid-cont img {
-        padding-right: 10px;
-     }
+  
     
      .gallery-box {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
+        display: flex;
+        padding: 15px;
+        
+     }
+     .gallery-box img {
+        grid-column: 0 / 1;
+     }
+     .gallery-box p {
+        grid-column: 1 / 2;
      }
 }

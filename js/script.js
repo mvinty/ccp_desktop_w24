@@ -19,5 +19,8 @@ document.querySelector("#java").addEventListener("click", function() {
 window.onload = function() {
     //initialize total clicks from local
     totalClicks = parseInt(localStorage.getItem("totalClicks"));
+    if(!totalClicks){
+        totalClicks = 0;
+    }
 };
 
